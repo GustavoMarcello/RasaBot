@@ -1,5 +1,5 @@
 # Projeto Chatbot Rasa
-<p align="center"><img src = "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p align="center"><img src = "https://miro.medium.com/max/3676/1*_dSYveHwcyajSzy23yYmYA.jpeg"></p>
 
 ## Descrição
 - Desenvolvimento de um chatbot rasa, com objetivo de auxiliar a secretaria da fatec com respostas mais simples a usuários do site https://www.fatecmm.edu.br.
