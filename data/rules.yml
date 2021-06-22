@@ -1,0 +1,30 @@
+version: "2.0"
+
+rules:
+- rule: saudando bot
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- rule: dizendo obrigado
+  steps:
+  - intent: obrigado
+  - action: utter_obrigado
+
+- rule: dizendo tchau
+  steps:
+  - intent: tchau
+  - action: utter_tchau
+
+- rule: horario da secretaria
+  steps:
+  - intent: horario_secretaria
+  - action: utter_horario_secretaria
+
+- rule: expedição de documentos escolares
+  steps:
+  - intent: documentos_escolares
+  - action: utter_documentos_escolares 
+  - action: action_documentos_escolares 
+
+

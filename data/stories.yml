@@ -1,0 +1,25 @@
+version: "2.0"
+
+stories:
+- story: caminho 1
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao 
+  - intent: horario_secretaria
+  - action: utter_horario_secretaria
+  - intent: obrigado
+  - action: utter_obrigado
+  - intent: tchau
+  - action: utter_tchau
+
+- story: caminho 2
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao 
+  - intent: documentos_escolares
+  - action: utter_documentos_escolares
+  - action: action_documentos_escolares 
+  - intent: obrigado
+  - action: utter_obrigado
+  - intent: tchau
+  - action: utter_tchau

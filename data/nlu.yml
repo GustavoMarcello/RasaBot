@@ -1,0 +1,47 @@
+version: "2.0"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - Oi
+    - Olá
+    - Eae
+    - tudo bem?
+    - bom dia
+    - boa tarde
+    - boa noite
+    - Fala mano
+    - fala ae
+
+- intent: obrigado
+  examples: |
+    - Obrigado
+    - obg
+    - valeu
+    - vlw
+    - tamo junto
+    - tmj
+
+- intent: tchau
+  examples: |
+    - valeu
+    - até mais
+    - tchau
+    - adeus
+    - Vejo você por aí
+    - tchau tchau
+    - até logo
+    - Tchau
+    
+- intent: horario_secretaria
+  examples: |
+    - horario secretaria
+    - Poderia me informar o horario da secretaria
+    - Quero saber o horario de funcionamento
+
+- intent: documentos_escolares
+  examples: |
+    - Como devo expedir os documentos escolares?
+    - Preciso expedir meus documentos.
+    - O que faço para expedir os documentos?
+

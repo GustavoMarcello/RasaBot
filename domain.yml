@@ -1,0 +1,46 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- saudacao
+- obrigado
+- tchau
+- horario_secretaria
+- documentos_escolares
+
+responses:
+  utter_saudacao:
+  - text: 'Olá, Gostaria de alguma informação?'
+  utter_horario_secretaria:
+  - text: 'De seg. à sexta: das 8h às 11h / das 13h às 17h / e das 18h30 às 22h'
+  utter_documentos_escolares:
+  - text: 'A expedição de documentos escolares deve ser solicitada por meio de requerimento à Direção, na Secretaria Acadêmica, que terão os seguintes prazos para entrega:'
+  utter_obrigado:
+  - text: 'Estamos a disposição, tenha um bom dia'
+  utter_tchau:
+  - text: Até mais =)
+
+actions:
+- consulta_api
+- action_documentos_escolares
+- utter_saudacao
+- utter_horario_secretaria
+- utter_documentos_escolares
+- utter_obrigado
+- utter_tchau
+- validate_option_form
+
+slots:
+  option:
+    type: text
+    influence_conversation: true
+  senderid:
+    type: text
+    influence_conversation: false
+
+forms:
+  option_form:
+    required_slots:
+      option:
+      - type: from_text
