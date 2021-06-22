@@ -12,6 +12,7 @@
 5. Usando o Web Chat, digite 'oi' ou alguma saudação para iniciar o bot.
 6. Escolha qual opção de retorno você deseja, e aguarde os resultados.
 7. Para iniciar o bot novamente, digite 'oi'.
+8. Teste 
 
 ## Tecnologias 
 - Python3
