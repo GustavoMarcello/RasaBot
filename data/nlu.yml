@@ -1,10 +1,11 @@
 version: "2.0"
-
 nlu:
 - intent: saudacao
   examples: |
     - Oi
     - Olá
+    - olá
+    - ola
     - Eae
     - tudo bem?
     - bom dia
@@ -12,16 +13,15 @@ nlu:
     - boa noite
     - Fala mano
     - fala ae
-
+    - oi
 - intent: obrigado
   examples: |
-    - Obrigado
-    - obg
-    - valeu
-    - vlw
-    - tamo junto
+    - Obrigado até logo
+    - obg até mas
+    - valeu é muito obrigado
+    - vlw é muito obrigado
+    - tamo junto obrigado
     - tmj
-
 - intent: tchau
   examples: |
     - valeu
@@ -32,16 +32,55 @@ nlu:
     - tchau tchau
     - até logo
     - Tchau
-    
-- intent: horario_secretaria
+    - xau
+    - obrigado tchau
+    - obrigado xau
+- intent: bot
   examples: |
-    - horario secretaria
-    - Poderia me informar o horario da secretaria
-    - Quero saber o horario de funcionamento
+    - você e um bot?
+    - você e um humano?
+    - eu estou falando com um bot?
+    - eu estou falando com um humano?
+    - bot?
+- intent: faq/telefone
+  examples: |
+    - Qual e o telefone da Fatec?
+    - Telefone da Fatec?
+    - telefone?
+- intent: faq/endereco
+  examples: |
+    - Qual e o endereço da Fatec?
+    - Endereço da Fatec?
+    - endereço?
+- intent: faq/horario
+  examples: |
+    - Que horas a Fatec trabalha?
+    - Horas que abre?
+    - hora de funcionamento da secretaria?
+    - Qual é o horário de funcionamento?
+    - qual o horário de funcionamento da secretaria?
+    - Que horas a Fatec abre?
+    - A fatec está aberta amanhã?
+    - A fatec está aberta hojé?
+    - A fatec abre de sábado?
+- intent: negacao/negandopergunta
+  examples: |
+    - não
+    - não?
+    - não quero
+    - não quero?
+    - negativo
+    - negativo?
+    - n?
+    - n
 
-- intent: documentos_escolares
+- intent: negacao/teste
   examples: |
-    - Como devo expedir os documentos escolares?
-    - Preciso expedir meus documentos.
-    - O que faço para expedir os documentos?
+    - teste
+    - teste?
+    - testa pra min?
+    
+
+
+
 

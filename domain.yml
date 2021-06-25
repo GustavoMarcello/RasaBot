@@ -3,44 +3,34 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- negacao:
+    is_retrieval_intent: true
+- faq:
+    is_retrieval_intent: true
 - saudacao
 - obrigado
 - tchau
-- horario_secretaria
-- documentos_escolares
-
+- bot
 responses:
   utter_saudacao:
-  - text: 'Olá, Gostaria de alguma informação?'
-  utter_horario_secretaria:
-  - text: 'De seg. à sexta: das 8h às 11h / das 13h às 17h / e das 18h30 às 22h'
-  utter_documentos_escolares:
-  - text: 'A expedição de documentos escolares deve ser solicitada por meio de requerimento à Direção, na Secretaria Acadêmica, que terão os seguintes prazos para entrega:'
-  utter_obrigado:
-  - text: 'Estamos a disposição, tenha um bom dia'
+  - text: Bem vindo ao Sistema FATEC MM
+  utter_pergunta:
+  - text: Em que posso te ajudar, digite o assunto desejado?
+  utter_desculpa:
+  - text: Desculpa eu não compreendo a sua pergunta, poderia informa novamente?
   utter_tchau:
-  - text: Até mais =)
-
-actions:
-- consulta_api
-- action_documentos_escolares
-- utter_saudacao
-- utter_horario_secretaria
-- utter_documentos_escolares
-- utter_obrigado
-- utter_tchau
-- validate_option_form
-
-slots:
-  option:
-    type: text
-    influence_conversation: true
-  senderid:
-    type: text
-    influence_conversation: false
-
-forms:
-  option_form:
-    required_slots:
-      option:
-      - type: from_text
+  - text: Tchau até mas!
+  - text: Tchau até logo!
+  - text: Tchau fico feliz por ter usado nosso bot!
+  utter_bot:
+  - text: Olá eu sou um bot criado pela FATEC!
+  utter_faq/telefone:
+  - text: 'Telefone: (19) 3806-2181 e 3806-3139'
+  utter_faq/endereco:
+  - text: Rua Ariovaldo Silveira Franco, 567 - Jd. 31 de Março - CEP 13801-005 - Mogi Mirim(SP)
+  utter_faq/horario:
+  - text: 'Horário de funcionamento de seg. à sexta: das 8h às 11h / das 13h às 17h / e das 18h30 às 22h!'
+  utter_negacao/negandopergunta:
+  - text: Não entendi poderia me repetir novamente sua pergunta!
+  utter_negacao/teste:
+  - text: Não entendi poderia me repetir novamente sua pergunta!

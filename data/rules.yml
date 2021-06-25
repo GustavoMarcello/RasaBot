@@ -1,30 +1,36 @@
 version: "2.0"
 
 rules:
-- rule: saudando bot
+- rule: Diga 'Eu sou um bot' sempre que o usuário desafiar
   steps:
-  - intent: saudacao
-  - action: utter_saudacao
+  - intent: bot
+  - action: utter_bot
 
-- rule: dizendo obrigado
-  steps:
-  - intent: obrigado
-  - action: utter_obrigado
-
-- rule: dizendo tchau
+- rule: Tchau
   steps:
   - intent: tchau
   - action: utter_tchau
 
-- rule: horario da secretaria
+- rule: Fallback
   steps:
-  - intent: horario_secretaria
-  - action: utter_horario_secretaria
+  - intent: nlu_fallback
+  - action: utter_desculpa
 
-- rule: expedição de documentos escolares
+- rule: respond to FAQs
   steps:
-  - intent: documentos_escolares
-  - action: utter_documentos_escolares 
-  - action: action_documentos_escolares 
+  - intent: faq
+  - action: utter_faq
+
+- rule: retornando negacao
+  steps:
+  - intent: negacao
+  - action: utter_negacao
+
+- rule: saudacao
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - action: utter_pergunta
 
 
+  

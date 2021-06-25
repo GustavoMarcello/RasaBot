@@ -1,25 +1,34 @@
-version: "2.0"
+version: "1.7"
 
 stories:
-- story: caminho 1
+- story:  Fallback
   steps:
-  - intent: saudacao
-  - action: utter_saudacao 
-  - intent: horario_secretaria
-  - action: utter_horario_secretaria
-  - intent: obrigado
-  - action: utter_obrigado
-  - intent: tchau
-  - action: utter_tchau
+  - intent: nlu_fallback
+  - action: utter_desculpa
 
-- story: caminho 2
+- story: Tchau
   steps:
-  - intent: saudacao
-  - action: utter_saudacao 
-  - intent: documentos_escolares
-  - action: utter_documentos_escolares
-  - action: action_documentos_escolares 
-  - intent: obrigado
-  - action: utter_obrigado
   - intent: tchau
   - action: utter_tchau
+  
+- story: Eu sou um bot
+  steps:
+  - intent: bot
+  - action: utter_bot
+
+
+- story: saudacao
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - action: utter_pergunta
+
+- story: retornando negacao
+  steps:
+  - intent: negacao
+  - action: utter_negacao
+
+- story: respond to FAQs
+  steps:
+  - intent: faq
+  - action: utter_faq
